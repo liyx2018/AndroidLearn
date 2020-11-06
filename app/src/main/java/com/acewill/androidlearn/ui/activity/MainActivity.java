@@ -5,6 +5,7 @@ import android.content.Intent;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.acewill.androidlearn.databinding.ActivityMainBinding;
+import com.acewill.androidlearn.ui.activity.kotlin.MvvMDataStoreActivity;
 import com.acewill.androidlearn.ui.activity.kotlin.RecyclerViewSelectionActivity;
 import com.acewill.androidlearn.ui.adapter.MainAdapter;
 import com.acewill.androidlearn.ui.base.BaseActivity;
@@ -23,6 +24,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         dataSource.add("LiveData");
         dataSource.add("Rxjava");
         dataSource.add("Kotlin");
+        dataSource.add("MMKV && DataStore");
     }
 
     @Override
@@ -39,6 +41,9 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
                     break;
                 case 3:
                     startActivity(new Intent(this, RecyclerViewSelectionActivity.class));
+                    break;
+                case 4:
+                    startActivity(new Intent(this, MvvMDataStoreActivity.class));
                     break;
                 default:
                     break;
