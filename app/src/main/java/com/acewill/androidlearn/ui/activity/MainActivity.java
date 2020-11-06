@@ -5,6 +5,7 @@ import android.content.Intent;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.acewill.androidlearn.databinding.ActivityMainBinding;
+import com.acewill.androidlearn.ui.activity.kotlin.RecyclerViewSelectionActivity;
 import com.acewill.androidlearn.ui.adapter.MainAdapter;
 import com.acewill.androidlearn.ui.base.BaseActivity;
 import com.acewill.androidlearn.ui.view.DividerDecoration;
@@ -35,6 +36,9 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
             switch (position){
                 case 0:
                     startActivity(new Intent(this,RoomLearnActivity.class));
+                    break;
+                case 3:
+                    startActivity(new Intent(this, RecyclerViewSelectionActivity.class));
                     break;
                 default:
                     break;
